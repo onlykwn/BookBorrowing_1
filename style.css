@@ -1,0 +1,162 @@
+/* === GENERAL PAGE STYLING === */
+h2 {
+  text-transform: uppercase;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #4a3c2a;
+  margin-bottom: 10px;
+  font-family: "Antonio", serif;
+  font-weight: 200;
+}
+
+/* === LINKS === */
+a {
+  text-decoration: none;
+  color: #a67c52;
+}
+
+a:hover {
+  color: #855e42;
+  text-decoration: underline;
+}
+
+/* === FORMS === */
+form {
+  background-color: #fefaf5; /* lighter pastel beige */
+  padding: 20px;
+  border: 1px solid #e0d4c0;
+  border-radius: 6px;
+  width: 400px;
+  box-shadow: 0 2px 5px rgba(174, 146, 113, 0.15);
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #5b4b3b;
+}
+
+form input[type="text"],
+form input[type="date"],
+form select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 4px;
+  margin-bottom: 15px;
+  border: 1px solid #d3bfa9;
+  border-radius: 4px;
+  background-color: #f9f4ed;
+  color: #4a3c2a;
+}
+
+/* === BUTTONS === */
+button {
+  padding: 10px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  background-color: #c9a27e; /* warm nude */
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #b48c6e; /* darker on hover */
+}
+
+/* === TABLES === */
+table {
+  width: 80%; /* or 900px, etc. */
+  margin: 0 auto; /* Center the table */
+  border-collapse: collapse;
+  background-color: #fffdf9;
+  font-family: Arial, sans-serif;
+}
+
+table, th, td {
+  border: 1px solid #e6dccc;
+}
+
+th {
+  background-color: #f2e6d8;
+  color: #3e3427;
+  padding: 12px;
+}
+
+td {
+  padding: 10px;
+  color: #4a3c2a;
+}
+
+/* === STATUS TEXT === */
+.status-available {
+  color: #5b8a72;
+  font-weight: bold;
+}
+
+.status-borrowed {
+  color: #b3553d;
+  font-weight: bold;
+}
+
+/* === FORM WRAPPERS === */
+.form-wrapper {
+  max-width: 400px;
+  margin: 40px auto;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fcf7f0;
+  padding: 30px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(175, 140, 100, 0.1);
+}
+
+/* === SEARCH BAR === */
+.input {
+  background-color: #f3e9db;
+  border: 1px solid #d6c1aa;
+  color: #5e4c3a;
+  font-size: 16px;
+}
+
+.input::placeholder {
+  color: #a7937a;
+}
+
+.icon {
+  fill: #a7937a;
+}
+
+/* === CANCEL / BACK BUTTON STYLE === */
+.cancel-btn,
+.cancel-button,
+.back-button,
+.back-style {
+  background-color: #e6d0b8;
+  color: #4a3c2a;
+  border: 1px solid #d1b49b;
+  border-radius: 4px;
+  padding: 10px;
+  text-align: center;
+}
+
+.cancel-btn:hover,
+.back-button:hover,
+.back-style:hover {
+  background-color: #d2b497;
+}
+
+/* === RESPONSIVENESS === */
+@media screen and (max-width: 768px) {
+  form {
+    width: 100%;
+  }
+
+  table th,
+  table td {
+    font-size: 14px;
+  }
+}
